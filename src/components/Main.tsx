@@ -1,7 +1,7 @@
-import { SideBarState } from "@/atoms/sideBar";
-import OpenSideBar from "@/components/openSideBar";
-import SideBar from "@/components/SideBar";
-import VideoDashboard from "@/components/VideosDashboard";
+import { SideBarState } from "../atoms/sideBar";
+import OpenSideBar from "../components/openSideBar";
+import SideBar from "../components/SideBar";
+import VideoDashboard from "../components/VideosDashboard";
 import { RecoilRoot, useRecoilValue } from "recoil";
 const Main = ()=>{
     const sideBarState = useRecoilValue(SideBarState)

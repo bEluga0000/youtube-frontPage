@@ -1,4 +1,4 @@
-import { SearchBarState } from "@/atoms/searchBar"
+import { SearchBarState } from "../atoms/searchBar"
 import { useRecoilValue, useSetRecoilState } from "recoil"
 
 const SearchComponent = () => {

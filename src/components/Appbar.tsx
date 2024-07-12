@@ -1,6 +1,6 @@
-import { SideBarState } from "@/atoms/sideBar";
+import { SideBarState } from "../atoms/sideBar";
 import { useEffect, useState } from "react";
-import { SearchBarState } from "@/atoms/searchBar";
+import { SearchBarState } from "../atoms/searchBar";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import SearchBox from "./SearchBox";
 import SearchComponent from "./SearchComponent";

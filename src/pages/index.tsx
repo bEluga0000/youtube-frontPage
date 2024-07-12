@@ -1,5 +1,5 @@
-import AppBar from "@/components/AppBar";
-import MainComponent from "@/components/Main";
+import AppBar from "../components/Appbar";
+import MainComponent from "../components/Main";
 import { RecoilRoot } from "recoil";
 
 export default function Home() {
