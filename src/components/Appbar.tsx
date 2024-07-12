@@ -38,13 +38,13 @@ const AppBar = () => {
             {(searchBarState && windowWidth)  &&  (<SearchComponent/>
             )}
             {
-                (!searchBarState || !windowWidth)  && <div className="flex justify-center p-1 max-h-16 items-center md:ml-2 fixed w-full bg-black z-50">
-                    <div className="w-1/4 flex items-center gap-2 md:gap-5 px-2">
+                (!searchBarState || !windowWidth)  && <div className="flex justify-center  max-h-16 items-center md:ml-2 fixed w-full bg-black z-50">
+                    <div className="w-1/4 flex items-center gap-1 md:gap-5 px-1">
                         <div
                             onClick={() => {
                                 setSideBarState(!currentSideBarState);
                             }}
-                            className="cursor-pointer"
+                            className="cursor-pointer hover:bg-zinc-800 hover:rounded-full p-2"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
