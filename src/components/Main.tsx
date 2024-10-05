@@ -9,7 +9,7 @@ const Main = ()=>{
         {
             sideBarState && <div className="fixed"><OpenSideBar />
         </div>}
-        <div className="hidden md:col-span-1 md:block">
+        <div className="hidden md:col-span-1 md:block place-items-start">
             <SideBar />
         </div>
         <div className="md:col-span-11">

@@ -4,7 +4,7 @@ import { useRecoilValue } from "recoil"
 const SideBar = ()=>{
     const sideBarState = useRecoilValue(SideBarState)
     return <div>
-        {!sideBarState && <div className="flex flex-col justify-center items-center gap-6 max-h-screen text-center pt-3">
+        {!sideBarState && <div className="flex flex-col gap-2 max-h-screen text-center pt-3">
             <div className="flex flex-col items-center h-16 justify-center hover:bg-zinc-800
         cursor-pointer gap-1 w-14 rounded-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" >
