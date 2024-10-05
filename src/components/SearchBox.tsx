@@ -7,14 +7,13 @@ const SearchBox = () => {
     return (
         <div>
             <div className="mr-3">
-                <div className="flex hidden md:flex md:justify-center gap-10 ">
-                    <div className="flex border border-white block rounded-2xl
-            border-l rounded-lg p-1 w-9/12" >
+                <div className="hidden md:flex md:justify-center gap-8 ">
+                    {/* border-[#303030] */}
+                    <div className="  block rounded-full overflow-hidden w-full max-w-[600px]">
                         <div className="relative w-full">
-                            <input type="search" className="
-                bg-black  px-2 py-1 w-full z-20 text-md text-gray-100 outline-none" placeholder="Search " required />
-                            <button type="submit" className="absolute top-0 end-0  text-sm font-large h-full text-white  bg-[rgba(255,255,255,0.08)] px-2.5  border-l-1 border-white bg-zinc-800 ">
-                                <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <input type="search" className="bg-[#202020] px-4 py-2.5 w-full z-20 text-sm text-gray-100 outline-none rounded-full" placeholder="Search" required />
+                            <button type="submit" className="absolute top-0 right-0 text-sm h-full px-4 bg-[#303030] rounded-r-full flex justify-center items-center">
+                                <svg className="w-5 h-5 text-gray-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
                                 <span className="sr-only">Search</span>
@@ -22,7 +21,7 @@ const SearchBox = () => {
                         </div>
                     </div>
                     {/* <div className="w-2/12"> */}
-                        <div className="hover:bg-zinc-800 hover:rounded-full p-2 cursor-pointer  flex justify-center">
+                        <div className="bg-zinc-800 rounded-full p-2.5 cursor-pointer  flex justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                 <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
                                 <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
@@ -59,7 +58,6 @@ const SearchBox = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
                         </svg>
-
                     </div>
                 </div>
             </div>

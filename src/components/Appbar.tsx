@@ -4,7 +4,8 @@ import { SearchBarState } from "../atoms/searchBar";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import SearchBox from "./SearchBox";
 import SearchComponent from "./SearchComponent";
-
+import { MdVideoCall } from "react-icons/md";
+import { FaRegBell } from "react-icons/fa6";
 const AppBar = () => {
     const setSideBarState = useSetRecoilState(SideBarState);
     const currentSideBarState = useRecoilValue(SideBarState);
@@ -65,11 +66,19 @@ const AppBar = () => {
                             <img src="/youtube.png" alt="" className="h-16" />
                         </div>
                     </div>
-                    <div className="w-4/5">
+                    <div className="w-6/12">
                         <SearchBox />
                     </div>
-                    <div className="w-1/12 items-end flex justify-end  cursor-pointer md:pr-4">
-                        <img src="/profile.jpg" alt="" className="rounded-full md:h-12" />
+                    <div className="w-1/4  flex justify-end items-center cursor-pointer md:pr-4 gap-5">
+                        <div className="hover:bg-zinc-800 hover:rounded-full p-2 cursor-pointer  flex justify-center">
+                            <MdVideoCall fontSize={26}/>
+                    </div>
+                        <div className="hover:bg-zinc-800 hover:rounded-full p-2 cursor-pointer  flex justify-center">
+                            <FaRegBell fontSize={23} />
+                    </div>
+                    <div>
+                        <img src="/profile.jpg" alt="" className="rounded-full md:h-10" />
+                    </div>
                     </div>
                 </div>
             }

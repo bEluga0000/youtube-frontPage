@@ -17,13 +17,11 @@ const SearchComponent = () => {
 
         </div >
         <div className="col-span-8 ">
-            <div className="flex border border-white block rounded-2xl
-            border-l rounded-lg p-1" >
+            <div className="border border-[#303030] block rounded-full overflow-hidden w-full max-w-[600px]">
                 <div className="relative w-full">
-                    <input type="search"  className="
-                bg-black  px-2 py-1 w-full z-20 text-md text-gray-100 outline-none" placeholder="Search " required />
-                    <button type="submit" className="absolute top-0 end-0  text-sm font-large h-full text-white  bg-[rgba(255,255,255,0.08)] px-2.5  border-l-1 border-white bg-zinc-800 ">
-                        <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <input type="search" className="bg-[#202020] px-4 py-2.5 w-full z-20 text-sm text-gray-100 outline-none rounded-full" placeholder="Search" required />
+                    <button type="submit" className="absolute top-0 right-0 text-sm h-full px-4 bg-[#303030] rounded-r-full flex justify-center items-center">
+                        <svg className="w-5 h-5 text-gray-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                         <span className="sr-only">Search</span>
