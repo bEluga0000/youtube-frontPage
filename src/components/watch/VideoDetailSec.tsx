@@ -10,22 +10,22 @@ const VideoDetailSec = ()=>{
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, distinctio?
         </div>
         <div className="grid grid-cols-2">
-            <div className="flex gap-6 items-center">
-                <div className="flex gap-2">
+            <div className="flex items-center gap-2">
+                <div className="flex md:gap-2 gap-0.5">
                     <div>
-                        <img src="/profile.jpg" alt="" className="h-12 w-12 rounded-full" />
+                        <img src="/profile.jpg" alt="" className="md:h-12 md:w-12 rounded-full h-8 w-8" />
                     </div>
                     <div className="flex flex-col">
                         <div className="">
                             channelName
                         </div>
-                        <div className="text-sm text-[#aaa]">
+                        <div className="md:text-sm text-xs text-[#aaa]">
                             146K subscribers
                         </div>
                     </div>
                 </div>
                 <div className="bg-transparent h-fit bg-zinc-800 rounded-2xl">
-                    <button className="px-2 py-1.5"><FaBell  className="inline"/>  Subscribe</button>
+                    <button className="px-2 py-1.5 flex justify-center items-center gap-1"><FaBell className="inline" />  <span className="hidden  sm:inline">Subscribe</span></button>
                 </div>
             </div>
             <div className="flex items-center justify-between">
@@ -46,7 +46,7 @@ const VideoDetailSec = ()=>{
                     <div>
                         <IoMdShareAlt fontSize={20}/>
                     </div>
-                    <div>
+                    <div className="md:block hidden">
                         Share
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const VideoDetailSec = ()=>{
                 </div>
             </div>
         </div>
-        <div>
+        <div className="hidden lg:block">
             <CommentSection/>
         </div>
     </div>

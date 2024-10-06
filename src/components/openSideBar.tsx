@@ -1,6 +1,8 @@
+import SubscriptionSideCard from "./subscriptionSideCard"
+
 const OpenSideBar = () => {
-    return <div className="w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden  grid grid-cols-12 fixed">
-        <div className="col-span-5  md:col-span-3 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
+    return <div className="w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden  grid grid-cols-12 fixed pb-10 ">
+        <div className="col-span-4 px-2 md:col-span-2 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
                 <div>
@@ -11,6 +13,31 @@ const OpenSideBar = () => {
                 <div>
                     <p className="text-lg">home</p>
                 </div>
+            </div>
+            <div className="flex items-center  hover:bg-zinc-800
+        cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </div>
+                <div>
+                    <p className="text-lg">Shorts</p>
+                </div>
+            </div>
+            <div className="flex items-center  hover:bg-zinc-800
+        cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </div>
+                <div>
+                    <p className="text-lg">Subscription</p>
+                </div>
+            </div>
+            <div>
+                <hr />
             </div>
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
@@ -111,8 +138,28 @@ const OpenSideBar = () => {
                     <p className="text-lg">Poscosts</p>
                 </div>
             </div>
+            <div className="flex items-center rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
+                {/* <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
+                    </svg>
+
+
+                </div> */}
+                <div>
+                    <p className="text-lg">Subscriptions</p>
+                </div>
+            </div>
+            <div className="w-full">
+               <SubscriptionSideCard live/>
+                <SubscriptionSideCard live={false}/>
+                <SubscriptionSideCard live={false} />
+                <SubscriptionSideCard live={false} />
+                <SubscriptionSideCard live={false} />
+                <SubscriptionSideCard live={false}/>
+            </div>
         </div>
-        <div className="col-span-7 md:col-span-9 bg-black bg-opacity-50 ">
+        <div className="col-span-8 md:col-span-10 bg-black bg-opacity-50 ">
 
         </div>
     </div>
