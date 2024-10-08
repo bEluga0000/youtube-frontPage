@@ -1,7 +1,7 @@
 import SubscriptionSideCard from "./subscriptionSideCard"
 
 const OpenSideBar = () => {
-    return <div className="w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden  grid grid-cols-12 fixed pb-10 ">
+    return <div className="thin-scrollbar w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden grid grid-cols-12 fixed pb-10 ">
         <div className="col-span-4 px-2 md:col-span-2 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
