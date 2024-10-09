@@ -4,7 +4,7 @@ import OtherVideoCard from "./OtherVIdeoCard"
 const OtherVideos = ()=>{
     return <div className="mt-[24px]  flex flex-col px-2 gap-3">
         <div>
-            <Categories size1={3} size2={7} size3={6} size4={4}/>
+            <Categories size1={3} size2={7} size3={6} size4={4} loading={false}/>
         </div>
         <div className="flex flex-col gap-3">
             <OtherVideoCard/>
