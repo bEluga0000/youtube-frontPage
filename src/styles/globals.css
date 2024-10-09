@@ -25,38 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-
-@layer utilities {
-
-  /* Custom scrollbar styling */
-  .thin-scrollbar::-webkit-scrollbar {
-    width: 6px;
-    /* For vertical scrollbar */
-    height: 6px;
-    /* For horizontal scrollbar */
-  }
-
-  .thin-scrollbar::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* Scrollbar track color */
-  }
-
-  .thin-scrollbar::-webkit-scrollbar-thumb {
-    background: #888;
-    /* Scrollbar thumb color */
-    border-radius: 10px;
-    /* Rounded scrollbar thumb */
-  }
-
-  .thin-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    /* Scrollbar thumb color on hover */
-  }
-
-  /* For Firefox */
-  .thin-scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
-  }
-}

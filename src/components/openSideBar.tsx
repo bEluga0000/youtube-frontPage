@@ -1,8 +1,11 @@
 import SubscriptionSideCard from "./subscriptionSideCard"
-
+import { MdOutlineSubscriptions } from "react-icons/md";
+import { SiYoutubeshorts } from "react-icons/si";
+// import "@/styles/globals.css";
 const OpenSideBar = () => {
-    return <div className="thin-scrollbar w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden grid grid-cols-12 fixed pb-10 ">
-        <div className="col-span-4 px-2 md:col-span-2 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
+    return <>
+        <div className="w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden grid grid-cols-12 fixed pb-10 " style={{}} id="scroll-container">
+        <div className="col-span-5 px-2 sm:col-span-4 md:col-span-3 lg:col-span-2 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
                 <div>
@@ -17,9 +20,7 @@ const OpenSideBar = () => {
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                    </svg>
+                        <SiYoutubeshorts size={20}/>
                 </div>
                 <div>
                     <p className="text-lg">Shorts</p>
@@ -28,9 +29,7 @@ const OpenSideBar = () => {
             <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1 rounded-xl w-11/12 gap-5 mx-2 p-2 hover:rounded-lg">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                    </svg>
+                        <MdOutlineSubscriptions size={20}/>
                 </div>
                 <div>
                     <p className="text-lg">Subscription</p>
@@ -163,6 +162,7 @@ const OpenSideBar = () => {
 
         </div>
     </div>
+    </>
 
 }
 export default OpenSideBar

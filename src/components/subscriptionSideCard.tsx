@@ -2,7 +2,7 @@ const SubscriptionSideCard = ({live}:{live:boolean})=>{
     return <div className="flex items-center  hover:bg-zinc-800
         cursor-pointer gap-1rounded-xl w-11/12 gap-1.5 p-2 hover:rounded-lg ">
         <div className="w-1/4  ">
-            <img src="/profile.jpg" alt="" className="w-8 h-8 rounded-full"/>
+            <img src="/profile.jpg" alt="" className="w-6 h-6 rounded-full"/>
         </div>
         <div className="flex items-center w-3/4 justify-between ">
             <div className={`${live ? "w-9/12" :"" } overflow-hidden`}>
