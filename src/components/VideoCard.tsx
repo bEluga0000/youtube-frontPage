@@ -11,7 +11,7 @@ interface VideoSchema {
 const VideoCard = ({ video }: { video: VideoSchema }) => {
     const router = useRouter()
     return (
-        <div className="cursor-pointer w-full flex justify-center flex-col items-center p-2" onClick={()=>{
+        <div className="cursor-pointer w-full flex justify-center flex-col items-center m-2" onClick={()=>{
             router.push("/watch?video=1")
         }}>
             <img src={video.thumb} alt="" className="w-full rounded-3xl" />
@@ -23,10 +23,10 @@ const VideoCard = ({ video }: { video: VideoSchema }) => {
                     <div>
                         {video.title}
                     </div>
-                    <div className="text-gray-400">
+                    <div className="text-[#aaa] text-sm">
                         {video.name}
                     </div>
-                    <div className="text-gray-400">
+                    <div className="text-[#aaa] text-sm">
                         {video.views} - {video.timeStamp}
                     </div>
                 </div>

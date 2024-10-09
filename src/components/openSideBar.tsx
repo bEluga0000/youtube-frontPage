@@ -1,8 +1,11 @@
+import { SideBarState } from "@/atoms/sideBar";
 import SubscriptionSideCard from "./subscriptionSideCard"
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { SiYoutubeshorts } from "react-icons/si";
+import { useSetRecoilState } from "recoil";
 // import "@/styles/globals.css";
 const OpenSideBar = () => {
+    const setSideBarState = useSetRecoilState(SideBarState);
     return <>
         <div className="w-screen bg-transparent h-screen max-h-screen z-30 absolute overflow-y-scroll overflow-x-hidden grid grid-cols-12 fixed pb-10 " style={{}} id="scroll-container">
         <div className="col-span-5 px-2 sm:col-span-4 md:col-span-3 lg:col-span-2 flex flex-col items-center pt-2 bg-black overflow-y-auto pb-5 ">
@@ -158,7 +161,9 @@ const OpenSideBar = () => {
                 <SubscriptionSideCard live={false}/>
             </div>
         </div>
-        <div className="col-span-8 md:col-span-10 bg-black bg-opacity-50 ">
+        <div className="col-span-8 md:col-span-10 bg-black bg-opacity-50 " onClick={()=>{
+            setSideBarState(false)
+        }}>
 
         </div>
     </div>
